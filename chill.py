@@ -36,3 +36,8 @@ print("multiply=",num1*num2)
 print("division=",num1/num2)
 print("exponential of num1 =",num1**3," and exponential of num1 =",num2**3)
 print("modulus of num1 and num2 =",num1%num2)'''
+num=0
+while(num<=9):
+    num=num+1
+    print(num)
+

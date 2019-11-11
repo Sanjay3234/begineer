@@ -13,9 +13,9 @@ print("z=",z)
 if num==sum:
     print(num," is armstrong number")
 else:
-    print(num," is not armstrong number")'''
+    print(num," is not armstrong number")
 #multiplication program
-'''num =3
+num =3
 for i in range (1,10):
         print(num,"*",i,"=",num*i)
 #print("h\ne\nl\nl\no\n")
@@ -24,14 +24,15 @@ for i in range (1,10):
 #print("h\ae\al\al\ao\a")
 name="sanjay kumar pandit"
 age=22
-print("My name is ",name ," and my age is ",age )'''
+print("My name is ",name ," and my age is ",age )
 name= input("enter name")
 age=input("enter gae")
 num1=int(input("enter num1"))
 num2=int(input("enter num2"))
-print("My name is ",name ," and my age is ",age )
+#print("My name is ",name ," and my age is ",age )
 print("sum =",num1+num2)
-print("subtraction=",num1/num2)
+print("subtraction=",num1-num2)
 print("multiply=",num1*num2)
 print("division=",num1/num2)
-print("exponential of num1 =",num1**3)
+print("exponential of num1 =",num1**3," and exponential of num1 =",num2**3)
+print("modulus of num1 and num2 =",num1%num2)'''

@@ -85,8 +85,13 @@ mark.append(computer)
 mark.append(social)
 print(mark)
 OM=math+science+nepali+computer+social
-print("obtained mark of five subject = ",OM)'''
+print("obtained mark of five subject = ",OM)
 # Example take input from the user and ask the user which string needs to be counted
 user=input("enter a string = ")
 user1=input("which stringneed u ant to count = ")
 print(user1.count(user1))
+'''
+# from list ofnumbers get max and min value
+list1=[1,4,2,6,7]
+print(max(list1))
+print(min(list1))

@@ -1,4 +1,5 @@
 '''
+# examlple 1 armstrong number
 num=143
 w=int(num/10) #int(num/10)= 15 so [ w=15 ]
 x=num%10 # num=153 so modlus operator is used to get the reminder value from 153 i.e 3 [ x=3 ]
@@ -14,14 +15,16 @@ if num==sum:
     print(num," is armstrong number")
 else:
     print(num," is not armstrong number")
-#multiplication program
+#example 2 multiplication program
 num =3
 for i in range (1,10):
         print(num,"*",i,"=",num*i)
+# example 3 print hello stepwise
 #print("h\ne\nl\nl\no\n")
 #print("h\be\bl\bl\bo\b")
 #print("h\te\tl\tl\to\t")
 #print("h\ae\al\al\ao\a")
+# example 4 using input satatement name,age and arithmetic calculation
 name="sanjay kumar pandit"
 age=22
 print("My name is ",name ," and my age is ",age )
@@ -36,12 +39,13 @@ print("multiply=",num1*num2)
 print("division=",num1/num2)
 print("exponential of num1 =",num1**3," and exponential of num1 =",num2**3)
 print("modulus of num1 and num2 =",num1%num2)
+# example 5 series of number
 num=0
 while(num<=9):
     num=num+1
     print(num)
     break
-# program for list
+# example 6 program for list
 list1=[1,2,8,5,4,7]
 list2=[3,6,9,10]
 #print(list1)
@@ -57,7 +61,7 @@ print(list1.sort())
 list3=["sanjay","ajay","kanchan"]
 list3.append("manoj") # in list append  work for strings
 print(list3)
-# program for tuples
+# example 7 program for tuples
 tuple1=("sanjay","ajay","kanchan",'s')
 tuple2=("pravin","nabin","dikshya")
 tuple3=(1,5,4,7,3,8)
@@ -71,7 +75,7 @@ print("sanjay" in (tuple1))
 #tuple3.sort() # sort() don't work for integer in tuple
 tuple3.append() # append() don't work for string and integer in tuple ( tuple has no attribute for sort(),
 append(),pop(),extend()
-# example 1 = five subject mark from user and input into list and ptint sum of all marks
+# example 8 = five subject mark from user and input into list and ptint sum of all marks
 mark=[]
 math=int(input("enter the mark of math ="))
 science=int(input("enter the mark of science ="))
@@ -86,14 +90,84 @@ mark.append(social)
 print(mark)
 OM=math+science+nepali+computer+social
 print("obtained mark of five subject = ",OM)
-# Example 2 take input from the user and ask the user which string needs to be counted
+# Example 9 take input from the user and ask the user which string needs to be counted
 user=input("enter a string = ")
 user1=input("which stringneed u ant to count = ")
 print(user1.count(user1))
-# Example 3 replace a word from the stringand convert the string in uppercase
+# Example 10 replace a word from the stringand convert the string in uppercase
 list1=[1,4,2,6,7]
 print(max(list1))
-print(min(list1))'''
-song="SANJAY KUMAR PANDIT"
-print (song.replace("sanjay","diksha"))
-print(song.swapcase())
+print(min(list1))
+Name="SANJAY KUMAR PANDIT"
+print(Name)
+print (Name.replace("SANJAY","AJAY"))
+print(Name.swapcase())
+# EXAMPLE 11 if statement going fro party.
+num=int(input ("enter the amount of money you have ="))
+if num>0:
+    print("you can go to party")
+    print("congratulation you can go to party")
+else:
+    print("you can't go to party")
+    print("sorry you can't go to party")
+# EXAMPLE 12 if statement pass or fail.
+num=int(input ("enter the passing number="))
+if num>=40:
+    print("you are pass")
+else:
+    print("you are fail")
+# EXAMPLE 13 if statement driving according to age.
+age=int(input ("enter your age ="))
+if age>=18:
+    print("you can drive")
+else:
+    print("you can't drive")
+# example 14 using elif grage A,B,C and fail
+mark=int(input("enter your obtained mark ="))
+if mark>=90 and mark<100:
+    print("you  got A")
+elif mark>=70 and mark<90:
+    print("you got B")
+elif mark>=40 and mark<70:
+    print("you got c")
+elif mark<40 and mark>=0:
+    print("you are fail")
+else:
+    print("entered mark not valid")
+# example 15 even or odd
+num=int(input("enter a number ="))
+if num%2==0:
+    print("number is even")
+else:
+    print("number is odd")
+
+if num>0:
+   print ("ok")
+else:
+    print("out of range")
+# example 16 leap year or not
+year=int(input("enter a number ="))
+if year%4==0:
+    print(year,"year is leap")
+else:
+    print(year,"year is not leap")'''
+# example 17 ask from user naem,age and mobile number and should be valid [ isdigit(),isalpha() and isnull() ]
+'''
+# validation name
+name=input("enter your name =")
+if name.isalpha()==True and len(name)>6:
+    print(name, "valid")
+else:
+    print(name, "is invalid")
+age=input("enter your age =")
+# validation age
+if age.isnumeric()==True and int(age)>=18:
+    print(age,"valid")
+else:
+    print(age, "is invalid")
+# validation mobile
+mobile=input("enter your mobile number =")
+if mobile.isnumeric()==True and len(mobile)==10:
+    print(mobile,"valid")
+else:
+    print(mobile, "is invalid")'''

@@ -150,24 +150,64 @@ year=int(input("enter a number ="))
 if year%4==0:
     print(year,"year is leap")
 else:
-    print(year,"year is not leap")'''
+    print(year,"year is not leap")
 # example 17 ask from user naem,age and mobile number and should be valid [ isdigit(),isalpha() and isnull() ]
-'''
 # validation name
 name=input("enter your name =")
-if name.isalpha()==True and len(name)>6:
+if name.isalpha()==True and len(name)>7 or ' ' in name:
     print(name, "valid")
 else:
     print(name, "is invalid")
 age=input("enter your age =")
 # validation age
-if age.isnumeric()==True and int(age)>=18:
+if age.isnumeric()==True and int(age)>=18 or ' ' in age:
     print(age,"valid")
 else:
     print(age, "is invalid")
 # validation mobile
 mobile=input("enter your mobile number =")
-if mobile.isnumeric()==True and len(mobile)==10:
+if mobile.isnumeric()==True and len(mobile)==10 or ' ' in mobile:
     print(mobile,"valid")
 else:
-    print(mobile, "is invalid")'''
+    print(mobile, "is invalid")
+# example 18 to identify which polygon figure is the entered value shows
+AB=int(input("enter the length ="))
+BC=int(input("enter the breadth ="))
+CD=int(input("enter the length ="))
+AD=int(input("enter the breadth ="))
+if AB==CD and BC==AD:#AB==BC==CD==AD:
+    print("it is a rectangle")
+elif AB==BC==CD==AD:#AB==CD and BC==AD:
+    print("It is a square")
+else:
+    print("entered value is no match the condition ")
+#example 19 leap year
+year=int(input("enter the value of year ="))
+if year%4==0:
+    print(year,"is leap")
+elif year%100==0:
+    print(year,"yearis leap")
+elif year%400==0:
+    print(year,"is leap")
+else:
+    print(year,"is not leap")
+# example 20 to check enterded value match or not ,not match then again check if match then welcome
+name1=input("enter your name =")
+#if name1!=name2:
+while name1.isalpha()==False or len(name1)<7:
+    if  ' ' in name1:
+        break
+    print("entered name don't match")
+    name1=input("enter your name")
+print("welcome now you can go to next step")
+age=input("enter your age =")
+while age.isdigit()==False or int(age)<18:
+    print("entered name don't match")
+    age = input("enter your age")
+    print("welcome now you can go to next step")
+mobile=input("enter the mobile number =")
+while len(mobile)!=10:
+    print("entered name don't match")
+    mobile = input("enter your mobile number =")
+else:
+    print("welcome now you can go to next step")'''

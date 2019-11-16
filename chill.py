@@ -161,6 +161,7 @@ else:
 age=input("enter your age =")
 # validation age
 if age.isnumeric()==True and int(age)>=18 or ' ' in age:
+
     print(age,"valid")
 else:
     print(age, "is invalid")
@@ -210,4 +211,20 @@ while len(mobile)!=10:
     print("entered name don't match")
     mobile = input("enter your mobile number =")
 else:
-    print("welcome now you can go to next step")'''
+    print("welcome now you can go to next step")
+#example 21 ( Ask the user to enter 10 numbers using only one input statement and add them to the List. )
+number=input("Enter multiple value: ").split()
+x=number
+print("Number of list is: ",x)
+# example 22 ( From a list of numbers make a new list containing only the even numbers.)
+list1=[1,2,3,4,5,6,7,8,9,10]
+print("the value of list1 =",list1)
+num=[]
+for num1 in list1:
+    num2=num1
+    if num2 % 2==0:
+         num.append(num2)
+print("even number in the list are",num)
+print(type(num))
+# eexample 23 From a list separate the integers , strings and floats elements into three different lists.
+# example 24 From a list ask the user the number he wants to remove from the list and then print the list.'''

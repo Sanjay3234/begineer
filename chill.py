@@ -192,17 +192,16 @@ elif year%400==0:
     print(year,"is leap")
 else:
     print(year,"is not leap")
-# example 20 to check enterded value match or not ,not match then again check if match then welcome
+'''# example 20 to check enterded value match or not ,not match then again check if match then welcome
 name1=input("enter your name =")
-#if name1!=name2:
 while name1.isalpha()==False or len(name1)<7:
     if  ' ' in name1:
         break
     print("entered name don't match")
     name1=input("enter your name")
 print("welcome now you can go to next step")
-age=input("enter your age =")
-while age.isdigit()==False or int(age)<18:
+#age=input("enter your age =")
+''''while age.isdigit()==False or int(age)<18:
     print("entered name don't match")
     age = input("enter your age")
     print("welcome now you can go to next step")

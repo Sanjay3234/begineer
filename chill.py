@@ -225,5 +225,30 @@ for num1 in list1:
          num.append(num2)
 print("even number in the list are",num)
 print(type(num))
+##example 22 multiplication program
+num =3
+for i in range (1,10):
+        print(num,"*",i,"=",num*i)
 # eexample 23 From a list separate the integers , strings and floats elements into three different lists.
-# example 24 From a list ask the user the number he wants to remove from the list and then print the list.'''
+import sys
+list=[1,2,3,0,4,9.8,3.7,6.8,"nishan","sanjay","suwas","bhagat"]
+list1=[]
+list2=[]
+list3=[]
+for x in list:
+    if type(x)==int:
+        list1.append(x)
+    elif type(x) ==float:
+        list2.append(x)
+    elif type(x)==str:
+        list3.append(x)
+else:
+        sys.exit
+print("list1=",list1)
+print("list2=",list2)
+print("list3=",list3)
+# example 24 From a list ask the user the number he wants to remove from the list and then print the list.
+list1=[1,2,3,4.6,5.9,6.7,"nishan","sanjay"]
+index=int(input("enter the index ="))
+del list1[index]
+print("list1=",list1)'''

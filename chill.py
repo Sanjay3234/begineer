@@ -250,5 +250,8 @@ print("list3=",list3)
 # example 24 From a list ask the user the number he wants to remove from the list and then print the list.
 list1=[1,2,3,4.6,5.9,6.7,"nishan","sanjay"]
 index=int(input("enter the index ="))
-del list1[index]
-print("list1=",list1)'''
+if index in list1>7:
+    del list1[index]
+    print("list1=",list1)
+else:
+    print("out of range")'''

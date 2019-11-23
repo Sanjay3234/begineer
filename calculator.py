@@ -1,6 +1,6 @@
 name=input("PLEASE ENTER YOUR NAME =")
 while name.isalpha()==False or len(name)<8 :
-    if ' ' in name :
+    if ' ' in name:
         break
     else:
         print("THE NAME YOU ENTERED IS INCORRECT")

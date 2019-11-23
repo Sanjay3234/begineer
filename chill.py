@@ -94,10 +94,11 @@ print("obtained mark of five subject = ",OM)
 user=input("enter a string = ")
 user1=input("which stringneed u ant to count = ")
 print(user1.count(user1))
-# Example 10 replace a word from the stringand convert the string in uppercase
+# Example 10 max and mi from the list
 list1=[1,4,2,6,7]
 print(max(list1))
 print(min(list1))
+# Example 10 replace a word from the stringand convert the string in uppercase
 Name="SANJAY KUMAR PANDIT"
 print(Name)
 print (Name.replace("SANJAY","AJAY"))
@@ -191,8 +192,8 @@ elif year%100==0:
 elif year%400==0:
     print(year,"is leap")
 else:
-    print(year,"is not leap")
-'''# example 20 to check enterded value match or not ,not match then again check if match then welcome
+    print(year,"is not leap")'
+# example 20 to check enterded value match or not ,not match then again check if match then welcome
 name1=input("enter your name =")
 while name1.isalpha()==False or len(name1)<7:
     if  ' ' in name1:
@@ -201,13 +202,13 @@ while name1.isalpha()==False or len(name1)<7:
     name1=input("enter your name")
 print("welcome now you can go to next step")
 #age=input("enter your age =")
-''''while age.isdigit()==False or int(age)<18:
-    print("entered name don't match")
+while age.isdigit()==False or int(age)<18:
+        print("entered name don't match")
     age = input("enter your age")
-    print("welcome now you can go to next step")
+        print("welcome now you can go to next step")
 mobile=input("enter the mobile number =")
 while len(mobile)!=10:
-    print("entered name don't match")
+        print("entered name don't match")
     mobile = input("enter your mobile number =")
 else:
     print("welcome now you can go to next step")
@@ -254,4 +255,19 @@ if index in list1>7:
     del list1[index]
     print("list1=",list1)
 else:
-    print("out of range")'''
+    print("out of range")
+# example 25 :To check the entered number is armstrong or not ( 371 = 3^3+&^3+1^3 = 371 ) .
+def armstrong(a):
+    sum=0
+    num=a
+    b=a
+    while b!=0:
+        a=b%10
+        sum+=a**3
+        b=(b//10)
+    if sum==num:
+        print("armstrong")
+    else:
+        print("not armstrong")
+num=int(input("enter a number ="))
+print(armstrong(num))'''
